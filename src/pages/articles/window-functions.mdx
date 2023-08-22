@@ -8,6 +8,8 @@ export const meta = {
     'In SQL, the window function has the same function name that the aggregate part contains in it. Do these two functions perform similarly to one another? Let us learn about window functions and their unique features through this blog.',
 }
 
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
 ![](https://cdn-images-1.medium.com/max/3200/0*WjOa5lJ6Im2Z4xeQ)
 
 ## What are Window Functions?
@@ -16,14 +18,15 @@ Window functions are a powerful feature in SQL that allows you to perform calcul
 
 The syntax for window functions with a frame typically looks like this:
 
-````sql
+```sql
 select column1, column2
 <window function> (expression) OVER (PARTITION BY <partition_list> ORDER BY <order list> ROWS <frame_clause>)
-FROM table_name```
+FROM table_name
+```
 
 Here’s a breakdown of the different parts:
 
-1.  **<window function>:** The function itself, such as SUM, AVG, ROW_NUMBER, RANK, etc.
+1.  **window function:** The function itself, such as SUM, AVG, ROW_NUMBER, RANK, etc.
 
 2.  **PARTITION BY:** This optional clause divides the result set into partitions or groups based on the specified column(s). The window function will be applied independently within each division.
 
@@ -96,4 +99,3 @@ In conclusion, SQL window functions have opened the doors to a world of possibil
 So, let us embrace the power of window functions and dive even deeper into the vast ocean of SQL possibilities, where each query becomes an opportunity to unlock hidden treasures of knowledge, insight, and understanding.
 
 Happy querying!
-````
