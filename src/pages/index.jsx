@@ -254,7 +254,7 @@ export default function Home({ articles }) {
         <title>Kaviya Kumar</title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Kaviya, an aspiring data analyst based in Toronto. I'm navigating the intricacies of data as I learn and progress on this journey. "
         />
       </Head>
       <Container className="mt-9">
