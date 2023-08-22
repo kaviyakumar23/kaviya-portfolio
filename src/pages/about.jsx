@@ -66,8 +66,8 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 Fuelled by a lifelong passion for leadership and administration,
-                instilled by my father's aspirations for me, I embarked on a
-                journey to excel in civil services. While my childhood was
+                instilled by my father&apos;s aspirations for me, I embarked on
+                a journey to excel in civil services. While my childhood was
                 adorned with dreams of space exploration and the joy of playing
                 music, my focus gradually shifted towards preparing for the
                 challenging civil services exam.
