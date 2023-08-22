@@ -1,0 +1,67 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Kaviya Kumar',
+  date: '2023-08-14',
+  title: 'Common SQL mistakes and how to avoid them',
+  description:
+    'You’ve crafted a piece of SQL code, all set to extract information from your database. You type in the code, but to your surprise, no data shows up. Instead, an error message pops up. But hang on, don’t lose hope! Making mistakes while coding is perfectly normal, even when working with SQL. In this post, we’ll delve into six typical blunders folks tend to make when they’re working on SQL.',
+}
+
+![](https://cdn-images-1.medium.com/max/6706/1*U5AZSs0DjG8aGnHyE5ecqw.jpeg)
+
+## Why learn about common errors in SQL?
+
+Understanding and avoiding common errors can increase the efficiency of your SQL queries dramatically. Avoiding errors like missing or incorrect WHERE clauses, poor JOIN usage, and inefficient aggregate methods ensures that your searches return accurate results. Knowing about SQL injection vulnerabilities and how to avoid them might help keep your databases safe from malicious assaults. In essence, learning about typical SQL faults enables you to create queries that are efficient, secure, and accurate. It benefits not only your current projects but also your long-term development as a developer.
+
+## List of mistakes frequently made
+
+## 1. Missing brackets, commas, quotes, and misspelled words
+
+- When there is an opening bracket, there must also be a closing bracket. Incorrect use of these can have an impact on the query’s logical structure. This could provide unexpected outcomes or syntax mistakes.
+
+- In SQL statements, commas are used to separate various items. Omitting a crucial comma might mess up the syntax and lead to mistakes.
+
+- For string values to be indicated in SQL, quotes are essential. Incorrect syntax or unsuccessful searches can come from failing to enclose text within single (‘ ‘) or double (“ “) quotes.
+
+- Correct spelling is required for all SQL keywords, table/column names, and function names. Because the database won’t recognize the intended command or reference if they are misspelled, issues may result
+
+## 2. Using the required column names instead of the asterisk (\*) in a SELECT statement
+
+- Using the essential column names improves efficiency, clarifies the code, and lowers the possibility of mistakes or unintentional data disclosure.
+
+- Even though using an asterisk might be useful for short queries, it’s generally better practice to explicitly declare the columns you require for more effective and maintainable SQL code.
+
+## 3. Use the NOT EXIST operator instead of NOT IN
+
+- The **NOT IN operator doesn’t handle** **NULL values** in the list properly. If the list provided to NOT IN contains a NULL value, the result might not be as expected. It can lead to unexpected query results or errors. On the other hand, NOT EXISTS handles NULL values more intuitively and consistently.
+
+- NOT EXISTS allows you to control the logic more precisely and avoid unintentionally filtering out rows with NULL values.
+
+- Also, in some cases, NOT EXISTS can be more efficient than NOT IN, especially when dealing with large datasets.
+
+## 4. Use ISNULL() instead of COUNT () to count the rows with NULL values
+
+- By default, the COUNT function **does not count NULL values.** If you want to include NULL values in your count, this could result in inaccurate results. By explicitly including NULL values in the count while using ISNULL, precise calculations are ensured.
+
+- Using ISNULL keeps your logic consistent when interacting with NULL values that signify anything meaningful (such as an absence value). It guarantees that NULL values are handled appropriately in counting and other calculations.
+
+## 5. Do not use columns created through Windows functions & ‘CASE WHEN’ in the ‘WHERE’ clause of the same query
+
+- Processing of SQL queries happens in the following order: FROM > WHERE > GROUP BY > HAVING > SELECT > ORDER BY. This means that the WHERE clause is evaluated before the SELECT clause, where window functions and CASE WHEN expressions are applied. As a result, the WHERE clause cannot yet filter on the additional columns produced by these functions.
+
+- Databases frequently leverage the indexes and filters used in the WHERE clause to optimize query performance. The database may be unable to successfully optimize the query when you employ computed columns from window functions or CASE WHEN in the WHERE clause, which results in subpar performance.
+
+- Before carrying out filtering in the WHERE clause, it is often recommended to employ subqueries, common table expressions (CTEs), or derived tables to contain the window functions or CASE WHEN expressions. By doing so, you can make sure that the logical order of operations is followed and that the database can effectively optimize the query.
+
+## 6. Use WHERE clause after GROUP BY
+
+- You can filter the data that will be used in the groups and subsequent aggregations by adding the WHERE clause after the GROUP BY clause. This enables you to ensure that only pertinent rows are taken into account during calculations by limiting the dataset to a certain subset.
+
+- The performance of queries can be increased by using filtering before aggregation. You can minimize the amount of processing resources needed for the query by lowering the number of rows that need to be grouped and aggregated.
+
+- You can choose which groups and aggregated results are kept in the output by filtering after the GROUP BY clause. Depending on your criteria, you can set constraints to control the admission of particular categories or filter out undesirable groupings.
+
+As technology evolves, there’s always something new to learn. By staying up-to-date on common SQL errors and best practices, you will be able to continuously enhance your abilities and adapt to shifting trends in database development. Understanding frequent SQL errors boosts confidence in our abilities to work with databases. Learning from the mistakes of others lets one avoid doing them oneself, which allows one to spend less time troubleshooting faults and more time implementing important features.
+
+Happy querying, and may your databases always return the results you’re seeking!

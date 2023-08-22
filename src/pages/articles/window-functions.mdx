@@ -1,0 +1,99 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Kaviya Kumar',
+  date: '2023-07-30',
+  title: 'Deep Dive into SQL Window Functions',
+  description:
+    'In SQL, the window function has the same function name that the aggregate part contains in it. Do these two functions perform similarly to one another? Let us learn about window functions and their unique features through this blog.',
+}
+
+![](https://cdn-images-1.medium.com/max/3200/0*WjOa5lJ6Im2Z4xeQ)
+
+## What are Window Functions?
+
+Window functions are a powerful feature in SQL that allows you to perform calculations across a specific subset of rows related to the current row within a result set. These calculations are based on the defined window frame (“frame” is a term used in the context of window functions), which determines the scope or range of rows to be included in the calculation.
+
+The syntax for window functions with a frame typically looks like this:
+
+````sql
+select column1, column2
+<window function> (expression) OVER (PARTITION BY <partition_list> ORDER BY <order list> ROWS <frame_clause>)
+FROM table_name```
+
+Here’s a breakdown of the different parts:
+
+1.  **<window function>:** The function itself, such as SUM, AVG, ROW_NUMBER, RANK, etc.
+
+2.  **PARTITION BY:** This optional clause divides the result set into partitions or groups based on the specified column(s). The window function will be applied independently within each division.
+
+3.  **ORDER BY:** This clause specifies the order in which rows are processed within each partition. It determines the sequence of rows that define the window frame.
+
+4.  **ROWS: **This can be used if we want to further limit the rows within our partition. This is optional and usually not used.
+
+## Why use window functions?
+
+The key benefit of applying Window functions over standard aggregate functions is that they retain each row’s individual identity and add an aggregated value to each row without grouping the rows into a single output row.
+
+Because the rows are not crushed together, window functions have the primary benefit of allowing you to work with both aggregate and non-aggregate information simultaneously.
+
+By eliminating the requirement for self-joins or subqueries, window functions make complex queries easier to understand. They increase readability and maintainability by letting you express complicated calculations in a single query.
+
+Window functions can be more efficient than traditional methods because they only scan the data once. This can lead to significant performance improvements, especially when dealing with large datasets.
+
+## Types of window functions?
+
+Window functions can be categorized into several types based on their functionality. Here are three common types of window functions:
+
+![](https://cdn-images-1.medium.com/max/2000/0*VpxDqCxIii_kmpyP)
+
+## Quick Examples
+
+### Aggregate — COUNT()
+
+Here is an example of an aggregate window function. We have a table cust_value with the values inserted.
+
+![](https://cdn-images-1.medium.com/max/2000/1*4f9XkAsPsL6vUmf2fCzM7Q.png)
+
+In the cust_value table, we will count the number of customers in each store by partitioning the store, and the query to get the count is
+
+![](https://cdn-images-1.medium.com/max/4100/1*ItvfVpNaXiCZZExb-0FKEQ.png)
+
+As we can see, because we applied partition to the store, each new store column’s number is shown and is counted starting from the first row.
+
+![](https://cdn-images-1.medium.com/max/2016/1*rLcgUUe5GS_-C4ASLy6iPA.png)
+
+### RANKING — row_number()
+
+Here is an example of a row_number window function.
+
+![](https://cdn-images-1.medium.com/max/2780/1*ii3AOsA7wYK_0tg7IolzJQ.png)
+
+The row_number window function counts the number of rows in each partition and then counts up from 1 for the following partition.
+
+We can see from the result that each store is divided into categories based on the type of data it contains. Within each division, a distinct row number will be assigned, with different numbers being used for tied values.
+
+![](https://cdn-images-1.medium.com/max/2000/1*3uStlz5g03Hkhaq33B10_Q.png)
+
+### Value — LAG()
+
+The table cust_value is updated with the revenue and the date column to calculate the lag value.
+
+![](https://cdn-images-1.medium.com/max/2080/1*c8bc7tVgTD86w6wIS_Yt3w.png)
+
+We will consider the lag() in the value function. The query to calculate the lag() value is,
+
+![](https://cdn-images-1.medium.com/max/2788/1*U_hhv9XQcUlFQIprg3Ybhw.png)
+
+The lag() will give the values of the previous row while the lead() will give the values of the next row. The first row of the result is null because no previous value will be returned, as can be seen from the result. Similar to store A, store B returns the value from the previous row for the subsequent rows while the first row’s value is null.
+
+![](https://cdn-images-1.medium.com/max/2720/1*l6Nyy6uM4A-Tb95oPAe5VQ.png)
+
+## Conclusion
+
+In conclusion, SQL window functions have opened the doors to a world of possibilities in data analysis, transforming how we interact with and derive insights from our datasets. As we harness their potential and incorporate them into our SQL arsenal, we embark on a path toward becoming more proficient, resourceful, and insightful data professionals.
+
+So, let us embrace the power of window functions and dive even deeper into the vast ocean of SQL possibilities, where each query becomes an opportunity to unlock hidden treasures of knowledge, insight, and understanding.
+
+Happy querying!
+````
