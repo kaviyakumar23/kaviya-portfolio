@@ -55,7 +55,7 @@ export default function Document() {
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
         <NextScript />
-        <Analytics mode={'production'} />;
+        <Analytics />;
       </body>
     </Html>
   )
