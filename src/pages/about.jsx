@@ -61,7 +61,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Kaviya Kumar - an Analyst shaping the future of organizations.
+              I’m Kaviya Kumar - s Curious student on a data-driven journey.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -79,20 +79,13 @@ export default function About() {
                 as valuable lessons that further strengthened my resolve.
               </p>
               <p>
-                Simultaneously, my fascination with the wonders of space and my
-                love for music remained steadfast, providing me with a
-                well-rounded perspective that enhances my analytical abilities.
-                Immersed in the harmonies of music and the beauty of the cosmos,
-                I find inspiration and creative thinking that complements my
-                role as a data analyst.
-              </p>
-              <p>
-                Today, armed with expertise in data analysis, insights
-                generation, and strategic decision-making, I help businesses
-                navigate complex challenges and unlock their full potential. By
-                leveraging my skills in administration and leadership, I bring a
-                unique perspective to the realm of business data analysis,
-                driving growth and transformation for organizations.
+                I&apos;m a student diving deep into business analytics, getting
+                the hang of tech like SQL, Python, and showing data visually.
+                Once I&apos;m through with my studies, my aim is to land a gig
+                as a data analyst. I&apos;m all about turning data into useful
+                insights and can&apos;t wait to bring my skills to the real
+                world! Stick around as I share my journey in this ever-changing
+                field.
               </p>
             </div>
           </div>
