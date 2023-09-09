@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { formatDate } from '@/lib/formatDate'
-import { getAllHaikus } from '@/lib/getAllHaikus'
+import { getAllScribbles } from '@/lib/getAllScribbles'
 
 function Article({ article }) {
   return (
@@ -35,7 +35,7 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <Head>
-        <title>Haikus - Kaviya Kumar</title>
+        <title>Scribbles - Kaviya Kumar</title>
         <meta
           name="description"
           content="Journey through succinct expressions that encapsulate the beauty of emotions and the essence of existence, inviting you to explore the intricacies of love and the tapestry of life."
@@ -61,7 +61,7 @@ export default function ArticlesIndex({ articles }) {
 export async function getStaticProps() {
   return {
     props: {
-      articles: (await getAllHaikus()).map(({ component, ...meta }) => meta),
+      articles: (await getAllScribbles()).map(({ component, ...meta }) => meta),
     },
   }
 }
