@@ -52,6 +52,11 @@ export default function Document() {
         />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5594891909212925"
+          crossorigin="anonymous"
+        ></script>
         <Main />
         <NextScript />
       </body>
