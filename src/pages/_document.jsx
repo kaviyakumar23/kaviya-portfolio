@@ -39,7 +39,10 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
-        <meta property="og:title" content="Kaviya Kumar - Portfolio Website" />
+        <meta
+          property="og:title"
+          content="Kaviya Kumar - Blogging, Scribbles, & More 📝🎨"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
