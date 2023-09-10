@@ -31,13 +31,6 @@ export default function App({ Component, pageProps, router }) {
       </div>
       <div className="relative">
         <Header />
-        <div>
-          <Image
-            className="li-image hidden"
-            src={portraitImage}
-            alt="portfolio"
-          />
-        </div>
         <main>
           <Component previousPathname={previousPathname} {...pageProps} />
         </main>
