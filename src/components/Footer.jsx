@@ -24,6 +24,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/articles">Articles</NavLink>
                 <NavLink href="/scribbles">Scribbles</NavLink>
+                <NavLink href="/varigal">வரிகள்</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Kaviya Kumar. All rights

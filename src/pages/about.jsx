@@ -61,16 +61,16 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Kaviya Kumar - a Curious student on a data-driven journey.
+              I’m Kaviya Kumar - a curious student on a data-driven journey.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 Fuelled by a lifelong passion for leadership and administration,
                 instilled by my father&apos;s aspirations for me, I embarked on
-                a journey to excel in civil services. While my childhood was
-                adorned with dreams of space exploration and the joy of playing
-                music, my focus gradually shifted towards preparing for the
-                challenging civil services exam.
+                a journey to excel in the Indian civil services. While my
+                childhood was adorned with dreams of space exploration and the
+                joy of playing music, my focus gradually shifted towards
+                preparing for the challenging civil services exam.
               </p>
               <p>
                 With determination and perseverance, I dedicated myself to the
@@ -79,14 +79,14 @@ export default function About() {
                 as valuable lessons that further strengthened my resolve.
               </p>
               <p>
-                I&apos;m a student diving deep into business analytics, getting
-                the hang of tech like SQL, Python, and showing data visually.
-                Once I&apos;m through with my studies, my aim is to land a gig
-                as a Data Analyst. I&apos;m all about turning data into useful
+                I&apos;m a student diving deep into data analytics, getting the
+                hang of tech like SQL, Python, and showing data visually. Once
+                I&apos;m through with my studies, my aim is to land a gig as a
+                Data Analyst. I&apos;m all about turning data into useful
                 insights and can&apos;t wait to bring my skills to the real
-                world! Stick around as I share my journey in this ever-changing
-                field.
+                world!
               </p>
+              <p>Stick around as I share my journey in this space.</p>
             </div>
           </div>
           <div className="lg:pl-20">
