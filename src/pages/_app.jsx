@@ -6,6 +6,8 @@ import { Header } from '@/components/Header'
 import '@/styles/tailwind.css'
 import 'focus-visible'
 import { Analytics } from '@vercel/analytics/react'
+import Image from 'next/image'
+import portraitImage from '@/images/photos/image-0.jpg'
 
 function usePrevious(value) {
   let ref = useRef()
@@ -29,6 +31,13 @@ export default function App({ Component, pageProps, router }) {
       </div>
       <div className="relative">
         <Header />
+        <div>
+          <Image
+            className="li-image hidden"
+            src={portraitImage}
+            alt="portfolio"
+          />
+        </div>
         <main>
           <Component previousPathname={previousPathname} {...pageProps} />
         </main>
