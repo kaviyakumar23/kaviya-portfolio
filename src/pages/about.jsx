@@ -82,7 +82,7 @@ export default function About() {
                 I&apos;m a student diving deep into business analytics, getting
                 the hang of tech like SQL, Python, and showing data visually.
                 Once I&apos;m through with my studies, my aim is to land a gig
-                as a data analyst. I&apos;m all about turning data into useful
+                as a Data Analyst. I&apos;m all about turning data into useful
                 insights and can&apos;t wait to bring my skills to the real
                 world! Stick around as I share my journey in this ever-changing
                 field.
