@@ -39,6 +39,16 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
+        <meta property="og:title" content="Kaviya Kumar" />
+        <meta
+          property="og:image"
+          content="https://s3.amazonaws.com/kaviya.me/1690737936653+(1).jpeg"
+        />
+        <meta
+          property="og:description"
+          content="Discover the world of data and stories on my portfolio website."
+        />
+        <meta property="og:url" content="//www.kaviya.me" />
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
         <link
           rel="alternate"
@@ -50,16 +60,6 @@ export default function Document() {
           type="application/feed+json"
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
-        <meta property="og:title" content="Kaviya Kumar" />
-        <meta
-          property="og:image"
-          content="https://s3.amazonaws.com/kaviya.me/1690737936653+(1).jpeg"
-        />
-        <meta
-          property="og:description"
-          content="Discover the world of data and stories on my portfolio website."
-        />
-        <meta property="og:url" content="//www.kaviya.me" />
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
