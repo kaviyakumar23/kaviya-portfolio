@@ -21,3 +21,24 @@ export async function getAllScribbles() {
 
   return articles.sort((a, z) => new Date(z.date) - new Date(a.date))
 }
+
+async function importVarigal(articleFilename) {
+  let { meta, default: component } = await import(
+    `../pages/varigal/${articleFilename}`
+  )
+  return {
+    slug: articleFilename.replace(/(\/index)?\.mdx$/, ''),
+    ...meta,
+    component,
+  }
+}
+
+export async function getAllVarigal() {
+  let articleFilenames = await glob(['*.mdx', '*/index.mdx'], {
+    cwd: path.join(process.cwd(), 'src/pages/varigal'),
+  })
+
+  let articles = await Promise.all(articleFilenames.map(importVarigal))
+
+  return articles.sort((a, z) => new Date(z.date) - new Date(a.date))
+}
