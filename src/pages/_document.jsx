@@ -42,7 +42,7 @@ export default function Document() {
         <meta property="og:title" content="Kaviya Kumar" />
         <meta
           property="og:image"
-          content="https://s3.amazonaws.com/kaviya.me/kaviya_me.jpg"
+          content="https://s3.amazonaws.com/kaviya.me/kaviya_pfimage.jpg"
         />
         <meta
           property="og:description"
