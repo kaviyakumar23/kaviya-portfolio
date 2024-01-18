@@ -1,0 +1,120 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Kaviya Kumar',
+  date: '2023-08-14',
+  title: 'Excel Excellence: Navigating Data with LOOKUP Functions',
+  description:
+    'LOOKUP functions within Microsoft Excel serve the purpose of locating a specific value within a designated range of cells and providing the corresponding match.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+![](https://cdn-images-1.medium.com/max/3200/0*pcaeByMoL2M2XOhb)
+
+These functions encompass different types, each designed for a specific use. The most common LOOKUP functions are:
+
+* VLOOKUP()
+
+* HLOOKUP()
+
+* INDEX() and MATCH()
+
+## VLOOKUP() FUNCTION
+
+VLOOKUP() or Vertical Lookup() is used to search for a value in the first column of a table and retrieve a corresponding value from another column. VLOOKUP is useful for quickly finding information in a structured table.
+
+The syntax is **VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup]).**
+
+lookup_value = the value to look for (mostly the primary key in the table)
+table array = the table range
+col_index_num = the column number to retrieve the data from
+range _lookup = whether to perform an exact match (False) or an approximate match (True)
+
+Let us look at an example to understand the VLOOKUP() function better.
+
+This Excel sheet contains the entire data about the employees in an organization.
+
+![](https://cdn-images-1.medium.com/max/3200/0*JAVPCxN5On2eGrAW)
+
+Only the employee ID and First Name are in this sheet, but we need to know the Last Name, Department, and Pay Rate.
+
+![](https://cdn-images-1.medium.com/max/2224/0*_d6lWUp-X0i_o4Dp)
+
+We apply VLOOKUP() for the last name by opening the function argument console.
+
+The look_up value is the first employee ID, the table array consists of the required columns of the Master Emp List (here, required till the last name), the column index is 2 since the last name falls in the 2nd column and the Range_lookup is ‘FALSE’ as we can get an exact match.
+
+![](https://cdn-images-1.medium.com/max/2000/1*BQwFyad1qf2siL3uioAgBw.png)
+
+Here we go! We got the Last Name of our employees.
+
+![](https://cdn-images-1.medium.com/max/2000/0*cSwEAWb-GY6aBaK6)
+
+We can get the Department and Pay rate values by using a similar function and changing the arguments accordingly.
+
+## HLOOKUP() FUNCTION
+
+HLOOKUP() stands for Horizontal Lookup. It functions similarly to the VLOOKUP() but with a difference. It searches **horizontally **for a value in the first row of a table and retrieves a corresponding value from a specified row.
+
+The syntax is **HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])**.
+
+Below are the two worksheet examples we are considering.
+
+![](https://cdn-images-1.medium.com/max/3200/0*HyCkvxDIDnqxhxbn)
+
+![](https://cdn-images-1.medium.com/max/2254/0*7Ugu4JYSSb7mkSn8)
+
+From the other worksheet with all the data, we must determine the Warehouse 2 and 3 Inventory values in the Inventory Status Check spreadsheet.
+
+The formula looks as given below:
+
+![](https://cdn-images-1.medium.com/max/2000/0*YzlhrxbTWmfBqgO5)
+
+The lookup_value should be an absolute value as it remains the same for all the warehouse inventory — also, the row index number changes for each inventory as the specified value is surfed horizontally. For instance, the row index number for Warehouse 2 Inventory, and Warehouse 3 Inventory is 2, 3 respectively.
+
+We get this result when we apply the above formula.
+
+![](https://cdn-images-1.medium.com/max/2204/0*IA7JY8fsaDGxOjxL)
+
+## INDEX and MATCH() FUNCTION
+
+* The **Index()** returns the value at a specific position.
+Syntax: **INDEX(array, row_num, [column_num])**.
+
+* The **Match() **returns the numeric position of a value.
+Syntax: **MATCH(lookup_value, lookup_array, [match_type])**.
+
+VLOOKUP() and HLOOKUP() always search for the lookup value in the leftmost column of the table and retrieve data from the right. It **doesn’t support right-to-left lookups**. In contrast, INDEX() and MATCH() can overcome this limitation.
+
+In the below image, we can see that the Emp ID which acts as the lookup value is placed somewhere in the middle of the data.
+
+![](https://cdn-images-1.medium.com/max/3200/0*XLCHAooullcCYjYT)
+
+We need to find the department of the given emp ID.
+
+![](https://cdn-images-1.medium.com/max/2000/0*KY_ZsMmHoaHH-nML)
+
+Below is the INDEX() formula that should be given.
+
+![](https://cdn-images-1.medium.com/max/2000/0*Um9l4wcZcEEQNW8f)
+
+We are giving the MATCH() function for the Row_num as it helps to retrieve the position of the value we are searching for.
+
+![](https://cdn-images-1.medium.com/max/2006/0*yh9roEH-egtKkt7S)
+
+For the Match_type,
+
+* We have given 0 as it finds the first value that is exactly equal to the lookup value.
+
+* 1 finds the largest value that is less than or equal to the lookup value.
+
+* -1 finds the smallest value that is greater than or equal to the lookup value.
+
+In the INDEX() function argument, column_num is not needed as our array has only one value of data.
+
+We get the department name for the given Emp ID even when the column is not placed as the first on the left side of the table.
+
+![](https://cdn-images-1.medium.com/max/2000/0*UCc1NdoCjYpIT_tL)
+
+Hence, in the dynamic landscape of data analysis and spreadsheet administration, acquiring expertise in lookup functions is akin to unlocking a powerful set of tools within Excel. By incorporating these functions into our skill set, we’ll find ourselves operating with greater efficiency, drawing more insightful conclusions, and ultimately elevating the effectiveness of our work in the realms of data analysis and spreadsheet management.
