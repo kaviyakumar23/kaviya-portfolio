@@ -18,16 +18,18 @@ In SQL, a recursive function is characterized by its ability to repeatedly call 
 
 Let’s consider an example of a recursive function that calculates the factorial of a given integer:
 
-    CREATE FUNCTION factorial(n INTEGER)
-    RETURNS INTEGER AS $$
-    BEGIN
-    IF n <= 1 THEN
-    RETURN 1;
-    ELSE
-    RETURN n * factorial(n - 1);
-    END IF;
-    END;
-    $$ LANGUAGE plpgsql;
+```
+CREATE FUNCTION factorial(n INTEGER)
+RETURNS INTEGER AS $$
+BEGIN
+IF n <= 1 THEN
+RETURN 1;
+ELSE
+RETURN n * factorial(n - 1);
+END IF;
+END;
+$$ LANGUAGE plpgsql;
+```
 
 In this example, as n approaches 1, the factorial function recursively invokes itself with a reduced value of n, eventually reaching 1. This recursive process effectively computes the factorial of an integer.
 
@@ -37,10 +39,12 @@ A Common Table Expression (CTE) refers to a temporary result set that can be ref
 
 Syntax:
 
-    WITH cte_name (column_list) AS (
-    CTE_query_definition
-    )
-    statement;
+```
+WITH cte_name (column_list) AS (
+CTE_query_definition
+)
+statement;
+```
 
 Purpose of Recursive Functions and CTEs:
 
@@ -53,17 +57,18 @@ Purpose of Recursive Functions and CTEs:
 * Both recursive functions and CTEs enhance the adaptability and expandability of SQL queries, empowering developers to adeptly handle intricate data structures and iterative tasks.
 
 Let’s consider an example where we use a recursive CTE to generate a hierarchical list of employees and their managers in an organization:
-
-    WITH RECURSIVE EmployeeHierarchy AS (
-    SELECT employee_id, manager_id, employee_name
-    FROM employees
-    WHERE manager_id IS NULL - Root level employees
-    UNION ALL
-    SELECT e.employee_id, e.manager_id, e.employee_name
-    FROM employees e
-    INNER JOIN EmployeeHierarchy eh ON e.manager_id = eh.employee_id
-    )
-    SELECT * FROM EmployeeHierarchy;
+```
+WITH RECURSIVE EmployeeHierarchy AS (
+SELECT employee_id, manager_id, employee_name
+FROM employees
+WHERE manager_id IS NULL - Root level employees
+UNION ALL
+SELECT e.employee_id, e.manager_id, e.employee_name
+FROM employees e
+INNER JOIN EmployeeHierarchy eh ON e.manager_id = eh.employee_id
+)
+SELECT * FROM EmployeeHierarchy;
+```
 
 The query establishes a recursive CTE named EmployeeHierarchy utilizing the WITH RECURSIVE syntax. Commencing with the root-level employees (those without managers), this CTE iteratively integrates with subordinate employees until the entire hierarchical structure is encompassed.
 
