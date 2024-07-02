@@ -61,7 +61,7 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Kaviya Kumar - a curious student on a data-driven journey.
+              I’m Kaviya Kumar - discovering React
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
@@ -79,23 +79,31 @@ export default function About() {
                 as valuable lessons that further strengthened my resolve.
               </p>
               <p>
-                I&apos;m a student diving deep into data analytics, getting the
-                hang of tech like SQL, Python, and showing data visually. Once
-                I&apos;m through with my studies, my aim is to land a gig as a
-                Data Analyst. I&apos;m all about turning data into useful
-                insights and can&apos;t wait to bring my skills to the real
-                world!
+                Initially, I delved into data analytics, mastering tools like
+                SQL, Python, and data visualization. However, the lack of job
+                opportunities in data analytics prompted me to explore other
+                fields. This led me to the world of web development, where I
+                discovered a passion for JavaScript and React. The ability to
+                create interactive and dynamic web applications captivated me,
+                and I decided to transition my focus. Now, I’m diving deep into
+                web development, honing my skills in JavaScript and React. I’m
+                excited about turning data and ideas into functional,
+                interactive web applications. I can’t wait to bring my skills to
+                the real world and contribute to innovative projects.
               </p>
               <p>Stick around as I share my journey in this space.</p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/kaviya__kumar"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
               <SocialLink
-                href="https://twitter.com/kaviya__kumar"
+                href="https://www.instagram.com/_kavviya_/"
                 icon={InstagramIcon}
                 className="mt-4"
               >

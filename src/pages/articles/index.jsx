@@ -45,9 +45,9 @@ export default function ArticlesIndex({ articles }) {
         />
       </Head>
       <SimpleLayout
-        title="Exploring Data and Analytics — and extracting life lessons."
+        title="Exploring JavaScript and React — and Extracting Life Lessons"
         intro="
-        Curating a chronological anthology of my musings on data, analytics, SQL, and profound life lessons, along with insights on leadership and management."
+        A chronological anthology of my thoughts on JavaScript, React, data analytics, SQL, and life lessons."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
