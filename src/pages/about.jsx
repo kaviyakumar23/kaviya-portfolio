@@ -119,7 +119,7 @@ export default function About() {
             </ul>
           </div>
         </div>
-      </Container> 
+      </Container>
     </>
   )
 }
