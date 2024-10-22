@@ -79,17 +79,7 @@ export default function About() {
                 as valuable lessons that further strengthened my resolve.
               </p>
               <p>
-                Initially, I delved into data analytics, mastering tools like
-                SQL, Python, and data visualization. However, the lack of job
-                opportunities in data analytics prompted me to explore other
-                fields. This led me to the world of web development, where I
-                discovered a passion for JavaScript and React. The ability to
-                create interactive and dynamic web applications captivated me,
-                and I decided to transition my focus. Now, I’m diving deep into
-                web development, honing my skills in JavaScript and React. I’m
-                excited about turning data and ideas into functional,
-                interactive web applications. I can’t wait to bring my skills to
-                the real world and contribute to innovative projects.
+              Initially, I delved into data analytics, mastering tools like SQL, Python, and data visualization. I'm AWS Cloud Practitioner certified and hold a Power BI Data Analyst certification. The world of web development also caught my interest, where I discovered JavaScript and React. The ability to create interactive and dynamic web applications captivated me. Now, I work with both data analytics and web development technologies. I'm excited about my projects and experiences in both fields. My recent project HiringNews showcases my ability to work with data and create engaging web applications.
               </p>
               <p>Stick around as I share my journey in this space.</p>
             </div>

@@ -45,7 +45,7 @@ export default function ArticlesIndex({ articles }) {
         />
       </Head>
       <SimpleLayout
-        title="Exploring JavaScript and React — and Extracting Life Lessons"
+        title="Exploring Data Analytics and Web Dev"
         intro="
         A chronological anthology of my thoughts on JavaScript, React, data analytics, SQL, and life lessons."
       >

@@ -263,11 +263,7 @@ export default function Home({ articles }) {
             I&apos;m Kaviya Kumar
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Join me as I unravel the intricacies of coding, share captivating
-            stories, and embark on thrilling adventures both in the realm of web
-            development and beyond. From my journey in data analytics to
-            exploring the dynamic world of JavaScript and React, I am excited to
-            share my learning experiences and projects with you.
+          Join me as I unravel the intricacies of coding, share captivating stories, and embark on thrilling adventures in both data analytics and web development. From working with SQL, Python, and data visualization to exploring the dynamic world of JavaScript and React, I am excited to share my learning experiences and projects with you.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
