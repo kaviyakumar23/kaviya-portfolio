@@ -79,7 +79,7 @@ export default function About() {
                 as valuable lessons that further strengthened my resolve.
               </p>
               <p>
-              Initially, I delved into data analytics, mastering tools like SQL, Python, and data visualization. I'm AWS Cloud Practitioner certified and hold a Power BI Data Analyst certification. The world of web development also caught my interest, where I discovered JavaScript and React. The ability to create interactive and dynamic web applications captivated me. Now, I work with both data analytics and web development technologies. I'm excited about my projects and experiences in both fields. My recent project HiringNews showcases my ability to work with data and create engaging web applications.
+              Initially, I delved into data analytics, mastering tools like SQL, Python, and data visualization. I&apos;m AWS Cloud Practitioner certified and hold a Power BI Data Analyst certification. The world of web development also caught my interest, where I discovered JavaScript and React. The ability to create interactive and dynamic web applications captivated me. Now, I work with both data analytics and web development technologies. I&apos;m excited about my projects and experiences in both fields. My recent project HiringNews showcases my ability to work with data and create engaging web applications.
               </p>
               <p>Stick around as I share my journey in this space.</p>
             </div>
