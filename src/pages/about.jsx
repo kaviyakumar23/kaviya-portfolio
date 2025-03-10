@@ -66,25 +66,25 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I spend my days crafting web applications with React, turning
-                ideas into reality through code. It's amazing how a few lines of
-                JavaScript can create experiences that people interact with
-                every day.
+                ideas into reality through code. It&apos;s amazing how a few
+                lines of JavaScript can create experiences that people interact
+                with every day.
               </p>
               <p>
                 My tech journey has been quite the ride - started with data
-                analytics, got into web development, and now I'm learning deep
-                learning. There's always something new to learn, and that's what
-                keeps me excited about this field.
+                analytics, got into web development, and now I&apos;m learning
+                deep learning. There&apos;s always something new to learn, and
+                that&apos;s what keeps me excited about this field.
               </p>
               <p>
-                These days, I'm particularly interested in how we can blend web
-                technologies with AI. When I'm not coding, you can find me
-                exploring new restaurants in the city or catching up on the
+                These days, I&apos;m particularly interested in how we can blend
+                web technologies with AI. When I&apos;m not coding, you can find
+                me exploring new restaurants in the city or catching up on the
                 latest movies and TV shows.
               </p>
               <p>
                 Got an interesting project in mind? Or just want to chat about
-                tech? Feel free to reach out - I'm always up for a good
+                tech? Feel free to reach out - I&apos;m always up for a good
                 conversation about code, AI, or anything in between!
               </p>
             </div>
