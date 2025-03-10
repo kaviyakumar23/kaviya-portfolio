@@ -1,0 +1,57 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Kaviya Kumar',
+  date: '2024-11-15',
+  title: 'Building HiringNewsAI: Making Hacker News Job Search Less Painful',
+  description:
+    "How we built an AI-powered job matching service for Hacker News' Who's Hiring posts, and what we learned along the way",
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+![](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/031/222/datas/gallery.jpg)
+
+If you've ever searched for tech jobs on Hacker News' monthly "Who is Hiring" threads, you know the drill. Hundreds of comments to scroll through, Ctrl+F for keywords, and somehow still missing relevant opportunities. After one too many sessions of this tedious process, my friend and I decided there had to be a better way.
+
+That's how [HiringNewsAI](https://hiringnewsai.com) was born - our attempt to make job hunting on HN actually enjoyable (or at least less painful).
+
+## The Problem We Wanted to Solve
+
+Every month, the "Who is Hiring" thread on Hacker News gets flooded with 500+ job listings. While it's awesome to have so many opportunities in one place, finding the right ones is like searching for a needle in a haystack. You either spend hours scrolling or risk missing out on perfect matches because they used "JS" instead of "JavaScript" in their description.
+
+## Our Solution
+
+We built a service that does the heavy lifting for you:
+
+- Automatically grabs new job posts as they come in
+- Uses OpenAI to extract and understand job details (requirements, location, etc.)
+- Matches jobs to your profile using the Levenshtein distance algorithm (fancy way of saying we catch similar terms like "JS" and "JavaScript")
+- Delivers personalized job matches to your inbox when you want them
+
+## Behind the Scenes
+
+The tech stack is pretty straightforward:
+
+- React for the frontend (because, well, it's React)
+- Convex for the backend (which was a game-changer for real-time updates)
+- OpenAI's APIs to make sense of job descriptions
+- LemonSqueezy for handling payments
+
+Here's a cool discovery we made: we initially thought processing hundreds of job posts with AI would cost a fortune, but using the GPT-4o model turned out to be surprisingly cost-effective. We're talking pennies per post, and the model is incredibly good at extracting the right information. It's one of those "why didn't we try this sooner?" moments.
+
+My friend handled most of the backend magic - setting up the database and making sure everything runs smoothly. I focused on making the frontend look nice and implementing the matching algorithm.
+
+## What I Learned
+
+Building this taught me a few things:
+
+1. AI is amazing for parsing unstructured text (those job posts are wild)
+2. The Levenshtein distance algorithm is surprisingly useful for real-world problems
+3. Having a good backend partner makes everything 10x easier
+
+## What's Next?
+
+We're still improving things. The matching could be better, we could add more features, and there's always room for making the UI nicer. But it's already helping people find relevant jobs without the usual HN headache, and that's what matters.
+
+If you're tired of manually searching through HN job posts, give [HiringNewsAI](https://hiringnewsai.com) a try. And hey, if you have ideas for making it better, we're all ears!

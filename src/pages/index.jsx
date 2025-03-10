@@ -254,32 +254,26 @@ export default function Home({ articles }) {
         <title>Kaviya Kumar</title>
         <meta
           name="description"
-          content="I’m Kaviya, an aspiring react developer based in Coimbatore, India. I'm navigating the intricacies of Javascript and React as I learn and progress on this journey. "
+          content="React developer from Coimbatore, exploring web development and deep learning"
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I&apos;m Kaviya Kumar
+            Hi, I'm Kaviya
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Join me as I unravel the intricacies of coding, share captivating
-            stories, and embark on thrilling adventures both in the realm of web
-            development and beyond. From my journey in data analytics to
-            exploring the dynamic world of JavaScript and React, I am excited to
-            share my learning experiences and projects with you.
+            I'm a React developer who enjoys building things for the web. When
+            I'm not coding up new features, you'll find me diving into deep
+            learning - trying to wrap my head around AI and all that fascinating
+            stuff. It's an interesting mix, but that's what keeps things fun!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://www.instagram.com/_kavviya_/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            {/* <SocialLink
-              href="https://github.com"
+              href="https://github.com/kaviyakumar23"
               aria-label="Follow on GitHub"
-              icon={MediumIcon}
-            /> */}
+              icon={GitHubIcon}
+            />
             <SocialLink
               href="https://twitter.com/kaviya__kumar"
               aria-label="Follow on Twitter"
@@ -302,8 +296,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter />
-            <Resume /> */}
+            {/* <Newsletter />  <Resume /> */}
           </div>
         </div>
       </Container>

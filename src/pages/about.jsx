@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Kaviya Kumar</title>
         <meta
           name="description"
-          content="I’m Kaviya Kumar. I live in New York City, where I design the future."
+          content="Get to know me - a React developer with a growing interest in deep learning and AI."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,37 +61,32 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Kaviya Kumar - discovering React
+              A bit about me
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Fuelled by a lifelong passion for leadership and administration,
-                instilled by my father&apos;s aspirations for me, I embarked on
-                a journey to excel in the Indian civil services. While my
-                childhood was adorned with dreams of space exploration and the
-                joy of playing music, my focus gradually shifted towards
-                preparing for the challenging civil services exam.
+                I spend my days crafting web applications with React, turning
+                ideas into reality through code. It's amazing how a few lines of
+                JavaScript can create experiences that people interact with
+                every day.
               </p>
               <p>
-                With determination and perseverance, I dedicated myself to the
-                pursuit of a career in public administration. Though I
-                encountered setbacks along the way, I embraced these experiences
-                as valuable lessons that further strengthened my resolve.
+                My tech journey has been quite the ride - started with data
+                analytics, got into web development, and now I'm learning deep
+                learning. There's always something new to learn, and that's what
+                keeps me excited about this field.
               </p>
               <p>
-                Initially, I delved into data analytics, mastering tools like
-                SQL, Python, and data visualization. However, the lack of job
-                opportunities in data analytics prompted me to explore other
-                fields. This led me to the world of web development, where I
-                discovered a passion for JavaScript and React. The ability to
-                create interactive and dynamic web applications captivated me,
-                and I decided to transition my focus. Now, I’m diving deep into
-                web development, honing my skills in JavaScript and React. I’m
-                excited about turning data and ideas into functional,
-                interactive web applications. I can’t wait to bring my skills to
-                the real world and contribute to innovative projects.
+                These days, I'm particularly interested in how we can blend web
+                technologies with AI. When I'm not coding, you can find me
+                exploring new restaurants in the city or catching up on the
+                latest movies and TV shows.
               </p>
-              <p>Stick around as I share my journey in this space.</p>
+              <p>
+                Got an interesting project in mind? Or just want to chat about
+                tech? Feel free to reach out - I'm always up for a good
+                conversation about code, AI, or anything in between!
+              </p>
             </div>
           </div>
           <div className="lg:pl-20">

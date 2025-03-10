@@ -45,9 +45,11 @@ export default function ArticlesIndex({ articles }) {
         />
       </Head>
       <SimpleLayout
-        title="Exploring JavaScript and React — and Extracting Life Lessons"
+        title="Notes on Code, Coffee, and Everything in Between"
         intro="
-        A chronological anthology of my thoughts on JavaScript, React, data analytics, SQL, and life lessons."
+        My collection of writings about web development, tech discoveries, and the occasional 
+        lightbulb moments that happen along the way. Mostly React and JavaScript, with a sprinkle 
+        of other cool stuff I'm learning."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">
