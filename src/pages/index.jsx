@@ -263,11 +263,11 @@ export default function Home({ articles }) {
             Hi, I&apos;m Kaviya
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m a React developer who enjoys building things for the web.
-            When I&apos;m not coding up new features, you&apos;ll find me diving
-            into deep learning - trying to wrap my head around AI and all that
-            fascinating stuff. It&apos;s an interesting mix, but that&apos;s
-            what keeps things fun!
+            I&apos;m a full-stack developer specializing in React, Node.js, and
+            Ruby on Rails. When I&apos;m not building with JavaScript or Rails,
+            you&apos;ll find me diving into deep learning - trying to wrap my
+            head around AI and all that fascinating stuff. It&apos;s an
+            interesting mix, but that&apos;s what keeps things fun!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Kaviya Kumar</title>
         <meta
           name="description"
-          content="Get to know me - a React developer with a growing interest in deep learning and AI."
+          content="Get to know me - a full-stack developer working with React, Node.js, and Ruby on Rails, with a growing interest in deep learning and AI."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -65,22 +65,23 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I spend my days crafting web applications with React, turning
-                ideas into reality through code. It&apos;s amazing how a few
-                lines of JavaScript can create experiences that people interact
-                with every day.
+                I spend my days crafting web applications using modern
+                JavaScript technologies like React and Node.js, along with Ruby
+                on Rails. It&apos;s amazing how these powerful tools can create
+                experiences that people interact with every day.
               </p>
               <p>
                 My tech journey has been quite the ride - started with data
-                analytics, got into web development, and now I&apos;m learning
-                deep learning. There&apos;s always something new to learn, and
-                that&apos;s what keeps me excited about this field.
+                analytics, dove into full-stack development with JavaScript and
+                Rails, and now I&apos;m learning deep learning. There&apos;s
+                always something new to learn, and that&apos;s what keeps me
+                excited about this field.
               </p>
               <p>
-                These days, I&apos;m particularly interested in how we can blend
-                web technologies with AI. When I&apos;m not coding, you can find
-                me exploring new restaurants in the city or catching up on the
-                latest movies and TV shows.
+                These days, I&apos;m particularly interested in how we can
+                combine modern JavaScript frameworks with AI. When I&apos;m not
+                coding, you can find me exploring new restaurants in the city or
+                catching up on the latest movies and TV shows.
               </p>
               <p>
                 Got an interesting project in mind? Or just want to chat about
